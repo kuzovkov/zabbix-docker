@@ -72,8 +72,8 @@ services:
    cache_from:
     - alpine:3.14
   image: zabbix-proxy-sqlite3:alpine-local
-  profiles:
-   - all
+#  profiles:
+#   - all
   ports:
    - "10061:10051"
   volumes:
@@ -302,9 +302,9 @@ services:
    cache_from:
     - alpine:3.14
   image: zabbix-agent:alpine-local
-  profiles:
-   - full
-   - all
+#  profiles:
+#   - full
+#   - all
   ports:
    - "10050:10050"
   volumes:
@@ -379,9 +379,9 @@ services:
    cache_from:
     - alpine:3.14
   image: zabbix-snmptraps:alpine-local
-  profiles:
-   - full
-   - all
+#  profiles:
+#   - full
+#   - all
   ports:
    - "162:1162/udp"
   volumes:
