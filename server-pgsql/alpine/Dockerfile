@@ -109,7 +109,7 @@ RUN set -eux && \
             --with-ssh \
             --with-unixodbc \
             --enable-ipv6 \
-            --disable-dependency-tracking \
+#            --disable-dependency-tracking \
             --silent && \
     make -j"$(nproc)" -s dbschema && \
     make -j"$(nproc)" -s && \
